@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="ru")
+  include ../includes/common/head.pug
+  +head('X-Day || Контакты')
+  body
+    .wrapper
+      include ../includes/components/header.pug
+      .main
+        section.contact
+          .contact_wrap
+            h4.contact_title Установите связь
+            .contact_content-img
+              img(src="assets/images/content/alien.png", alt="ufo")
+            .contact_content-block
+              .contact_block-map
+                img(src="assets/images/content/map.png", alt="map")
+              .contact_block-data
+                .contact_data-title Контакты
+                .contact_data-content
+                  include ../includes/components/contacts-data.pug 
+        .contact-form
+          .contact-form_wrap
+            include ../includes/components/main-form.pug
+      include ../includes/components/footer.pug

@@ -1,0 +1,30 @@
+.contacts-data {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts_item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.contacts_item-link {
+    text-decoration: none;
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+.contacts_item-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    svg {
+        display: block;
+    }
+}

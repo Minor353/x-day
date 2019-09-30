@@ -1,0 +1,50 @@
+$white: #fff;
+
+$blue: #a3c1c0;
+
+$navi: #038f9e;
+
+$grey: #455a64;
+
+$black: #000;
+
+$dark-grey: #373e42;
+
+$maxscreen: 1600px;
+
+$maxtablet: 1200px;
+
+$tablet: 770px;
+
+$phone: 480px;
+
+
+@mixin maxscreen {
+    @media screen and (max-width:$maxscreen) {
+        @content;
+    }
+}
+
+@mixin maxtablet {
+    @media screen and (max-width:$maxtablet) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:$tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:$phone) {
+        @content;
+    }
+}
+
+/*
+@include maxscreen() {
+
+  }
+*/

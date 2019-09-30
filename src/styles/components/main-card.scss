@@ -1,0 +1,58 @@
+.main-card {
+    width: 370px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    background-color: #DEF2F1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-card_title {
+    position: relative;
+    padding: 55px 40px 47px 110px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background-color: #00E5AD;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.main-card_title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 42px;
+    background-image: url('../images/icons/uah.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-card_list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.main-card_list-item {
+    list-style-type: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #20222D;
+    margin-bottom: 10px;
+}
+
+.main-card_btn {
+    width: min-content;
+    margin: 0 auto;
+}

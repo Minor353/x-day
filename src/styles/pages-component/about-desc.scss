@@ -1,0 +1,26 @@
+.about-desc_wrap {
+  max-width: 1170px;
+  padding: 0 15px;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-desc_text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: right;
+  color: #FFFFFF;
+  padding-right: 15px;
+}
+
+.about-desc_title {
+  flex: 1;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+  padding-left: 15px;
+}

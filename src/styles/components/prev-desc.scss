@@ -1,0 +1,30 @@
+.prev-desc_wrap {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.prev-desc_wrap--padding {
+  padding-top: 90px;
+}
+
+.prev-desc_content {
+  width: 768px;
+}
+
+.prev-desc_img {
+  width: 465px;
+}
+
+.prev-desc_img--size {
+  width: 370px;
+  height: 370px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

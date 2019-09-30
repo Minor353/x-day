@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="ru")
+  include ../includes/common/head.pug
+  +head('X-Day || Направления')
+  body
+    .wrapper
+      include ../includes/components/header.pug
+      .main
+        section.prev-desc
+          .prev-desc_wrap
+            .prev-desc_content
+              h4.prev-desc_content-title.main-title Как много мы всего умеем
+              p.prev-desc_content-text Наслаждаться жизнью — удивительный навык, спасающий от рабочего застоя и рутинности. Но есть подвох.
+              p.prev-desc_content-text Чем чаще тренируешь эту полезную привычку, тем реже чувствуешь действительно яркие эмоции и тем больше устаешь от отдыха.
+            .prev-desc_img
+              img(src="assets/images/content/solar.png", alt="space")
+        .direction-list
+          .direction-list_wrap
+            include ../includes/components/service-list.pug
+        section.direction-call
+          .direction-call_wrap
+            .direction-call_card
+              include ../includes/components/little-card.pug
+              include ../includes/components/main-card.pug
+            h4.direction-call_title.main-title Выбери то, что тебе нужно
+            p.direction-call_text Наслаждаться жизнью — удивительный навык, спасающий от рабочего застоя и рутинности. Но есть подвох. Чем чаще тренируешь эту полезную привычку, тем реже чувствуешь действительно яркие эмоции и тем больше устаешь от отдыха. Наслаждаться жизнью — удивительный навык, спасающий от рабочего застоя и рутинности. Но есть подвох. Чем чаще тренируешь эту полезную привычку, тем реже чувствуешь действительно яркие эмоции и тем больше устаешь от отдыха.
+            a(href="#").button.direction-call_btn Услуги
+        section.direction-hww
+          .direction-hww_wrap
+            include ../includes/components/hww.pug
+        .direction-form
+          .direction-form_wrap
+            include ../includes/components/main-form.pug
+      include ../includes/components/footer.pug 

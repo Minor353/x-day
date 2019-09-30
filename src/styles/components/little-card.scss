@@ -1,0 +1,57 @@
+.little-card {
+  width: 370px;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  background-color: #DEF2F1;
+  border-radius: 10px;
+  overflow: hidden;
+  height: max-content;
+}
+
+.little-card_title {
+  position: relative;
+  padding: 55px 40px 47px 110px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
+  color: #FFFFFF;
+  background-color: #BE4333;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.little-card_title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 42px;
+  background-image: url('../images/icons/uah-wt.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.little-card_list {
+  padding: 0;
+  margin: 0;
+}
+
+.little-card_list-item {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #20222D;
+  margin-bottom: 10px;
+}
+
+.little-card_list-item:last-child {
+  margin-bottom: 0;
+}

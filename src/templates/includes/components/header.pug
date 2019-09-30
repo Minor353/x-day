@@ -1,0 +1,12 @@
+header.header
+    .header_wrap
+        .header_logo
+            include logo.pug
+        .header_nav
+            include nav.pug
+            +nav('header')
+        .header_number
+            .header_number-text Звоните
+            a(href="tel:+380 99 030 39 96").header_number-link +380 99 030 39 96
+        .header_msg
+            include messenger.pug

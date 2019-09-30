@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 18px 50px;
+    min-width: 270px;
+    width: max-content;
+    text-align: center;
+    background-color: #7785FF;
+    box-shadow: 0px 7px 25px rgba(8, 8, 18, 0.3);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.button--color {
+    background-color: #00E5AD;
+    box-shadow: 0px 5px 15px #00B387;
+}

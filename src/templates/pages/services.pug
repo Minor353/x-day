@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="ru")
+  include ../includes/common/head.pug
+  +head('X-Day || Услуги')
+  body
+    .wrapper
+      include ../includes/components/header.pug
+      .main
+        section.prev-desc
+          .prev-desc_wrap
+            .prev-desc_content
+              h4.prev-desc_content-title.main-title Жизнь разнообразна
+              p.prev-desc_content-text Наслаждаться жизнью — удивительный навык, спасающий от рабочего застоя и рутинности. Но есть подвох.
+              p.prev-desc_content-text Чем чаще тренируешь эту полезную привычку, тем реже чувствуешь действительно яркие эмоции и тем больше устаешь от отдыха.
+            .prev-desc_img
+              img(src="assets/images/content/service-bg.png", alt="space")
+        .services-list
+          .services-list_wrap
+            include ../includes/components/service-list.pug
+        .services-call
+          .services-call_wrap
+            h4.services-call_title.main-title Выбери то, что тебе нужно
+            p.services-call_text Наслаждаться жизнью — удивительный навык, спасающий от рабочего застоя и рутинности. Но есть подвох. Чем чаще тренируешь эту полезную привычку, тем реже чувствуешь действительно яркие эмоции и тем больше устаешь от отдыха. Наслаждаться жизнью — удивительный навык, спасающий от рабочего застоя и рутинности. Но есть подвох. Чем чаще тренируешь эту полезную привычку, тем реже чувствуешь действительно яркие эмоции и тем больше устаешь от отдыха.
+        .services-form
+          .services-form_wrap
+            include ../includes/components/big-form.pug
+      include ../includes/components/footer.pug
