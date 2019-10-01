@@ -1,0 +1,29 @@
+.portfolio-desc_wrap {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.portfolio-desc_img {
+  width: 670px;
+  height: 500px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.portfolio-desc_text {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.portfolio-desc_text--padding {
+  padding-left: 0;
+  padding-right: 30px;
+}
