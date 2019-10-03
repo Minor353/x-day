@@ -3,7 +3,9 @@ html(lang="ru")
   include ../includes/common/head.pug
   +head('X-Day || Портфолио')
   body
-    .wrapper
+    .canvas-animate
+        <canvas></canvas>
+    .wrapper.wrapper--color-none
         include ../includes/components/header.pug
         .main
             .portfolio-data
@@ -47,17 +49,21 @@ html(lang="ru")
                         .big-gallery_gallery
                             .big-gallery_gallery-screen
                                 img(src="assets/images/content/portfolio-main-1.png", alt="gallery")
+                                img(src="assets/images/content/Rectangle.png", alt="gallery")
+                                img(src="assets/images/content/portfolio-main-2.png", alt="gallery")
+                                img(src="assets/images/content/Rectangle.png", alt="gallery")
+                                img(src="assets/images/content/portfolio-main-2.png", alt="gallery")
                             .big-gallery_gallery-nav
                                 .big-gallery_gallery-nav-wrap
-                                    img(src="assets/images/content/Rectangle.png", alt="gallery nav")
-                                .big-gallery_gallery-nav-wrap
-                                    img(src="assets/images/content/portfolio-main-2.png", alt="gallery nav")
+                                    img(src="assets/images/content/portfolio-main-1.png", alt="gallery nav")
                                 .big-gallery_gallery-nav-wrap
                                     img(src="assets/images/content/Rectangle.png", alt="gallery nav")
                                 .big-gallery_gallery-nav-wrap
                                     img(src="assets/images/content/portfolio-main-2.png", alt="gallery nav")
                                 .big-gallery_gallery-nav-wrap
                                     img(src="assets/images/content/Rectangle.png", alt="gallery nav")
+                                .big-gallery_gallery-nav-wrap
+                                    img(src="assets/images/content/portfolio-main-2.png", alt="gallery nav")
                         .big-gallery_desc  Чем ближе день рождения ребенка, тем острее у нас, родителей вопрос: `Где можно отпраздновать детский день рождения?` Вы уже перечитали все `отзывы, уже побывали в гостях на днях рождения у друзей на 1 год, 2 года, 3 года, 4 года и каждый раз в новом месте. Вам понравилось, но хочется чего-то еще… Наш центр, наши залы и аниматоры уже ждут Вас. Мы делаем всё, чтобы превзойти Ваши ожидания
             .portfolio-report
                 .portfolio-report_wrap

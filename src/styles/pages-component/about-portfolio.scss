@@ -7,10 +7,13 @@
 
 .about-portfolio_tabs {
   padding: 0;
+  padding-bottom: 40px;
   margin: 0;
   display: flex;
   max-width: 1170px;
   overflow-x: scroll;
+  scrollbar-color: #7785FF #000000;
+  scrollbar-width: thin;
 }
 
 .about-portfolio_tabs-item {

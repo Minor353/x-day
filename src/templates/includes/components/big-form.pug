@@ -34,7 +34,7 @@
             .big-form_container
                 - var bigFormCheckBox = ['Разработка сценария мероприятия','Квест','Декор','Квест на местности','Фотограф','Выпечка','Оператор','Шарики','Ведущий','Аквагрим','Диджей','Аренда звуковой аппаратуры','Аниматор','Аренда световой аппаратуры','Шоу балет','Вокалист','Фокусы','Кавер группа','Мастер класс'];
                 each item in bigFormCheckBox
-                    label.big-form_label
+                    label.big-form_label.big-form_label-checkbox
                         input(type="checkbox", name="").big-form_checkbox
                         .big-form_label-text #{item}
             .big-form_title Не нашли то, что хотели бы добавить?

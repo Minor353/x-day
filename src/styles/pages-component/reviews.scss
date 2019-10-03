@@ -1,7 +1,7 @@
 .reviews {
-    padding: 125px 0 125px 0;
+    padding: 125px 0 0 0;
     background-image: url('../images/icons/reviews-bg.svg');
-    background-position: center;
+    background-position: 100% 75%;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -10,7 +10,7 @@
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
-    min-height: 460px;
+    min-height: 500px;
 }
 
 .reviews_title {
@@ -25,14 +25,17 @@
 
 .reviews_slider-item {
     list-style-type: none;
+    outline: none;
 
 }
 
 .reviews_slider-item-wrap {
     position: relative;
     padding: 20px;
+    margin: 15px 0;
     border-radius: 10px;
-    overflow: hidden;
+    padding-bottom: 95px;
+
     transition: 0.3s;
 }
 
@@ -69,19 +72,20 @@
 .reviews_btn {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(40px);
     bottom: 20px;
     opacity: 0;
+    transform: translateX(-50%) translateY(-60px);
     transition: 0.3;
 }
 
 .reviews_slider-item-wrap:hover {
-    padding-bottom: 95px;
+
     background-color: #15162D;
     box-shadow: 0px 7px 25px rgba(8, 8, 18, 0.3);
 
     .reviews_btn {
         opacity: 1;
         transform: translateX(-50%) translateY(0px);
+        transition: 0.3s;
     }
 }
