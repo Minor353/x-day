@@ -20,3 +20,21 @@
     background-color: #00E5AD;
     box-shadow: 0px 5px 15px #00B387;
 }
+
+.button--insta {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.button--insta::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons/Instagram.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+}

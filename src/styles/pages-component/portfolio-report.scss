@@ -23,12 +23,30 @@
 }
 
 .portfolio-report_list-item {
+  padding-left: 30px;
+  box-sizing: border-box;
+  position: relative;
   list-style-type: none;
   width: 50%;
   font-size: 20px;
   line-height: 24px;
   color: #F2F2F2;
   margin-bottom: 30px;
+}
+
+.portfolio-report_list-item::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-image: url('../images/icons/check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio-report_result {

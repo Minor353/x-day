@@ -40,6 +40,10 @@ const paths = {
         src: 'src/fonts/**/*.*',
         dest: 'build/assets/fonts/'
     },
+    video: {
+        src: 'src/video/**/*.*',
+        dest: 'build/assets/video/'
+    },
     scripts: {
         src: 'src/scripts/**/*.js',
         dest: 'build/assets/scripts/'
@@ -178,7 +182,7 @@ exports.spritesvg = spritesvg;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, fonts, scripts),
+    gulp.parallel(styles, templates, images, fonts, video, scripts),
     gulp.parallel(watch, server)
 ));
 

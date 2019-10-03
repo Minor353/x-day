@@ -1,14 +1,75 @@
 .present_wrap {
     height: 100vh;
     max-height: 920px;
-    background-image: url('../images/content/main_block.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     display: flex;
+    position: relative;
+}
+
+.present_video {
+    position: absolute;
+    z-index: 1;
+    width: 648px;
+    height: 648px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -57%);
+    overflow: hidden;
+}
+
+.present_mask {
+    position: absolute;
+    z-index: 3;
+    width: 650px;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -57%);
+    overflow: hidden;
+
+    svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .present_btn {
     margin: auto;
     margin-bottom: 28vh;
+    position: relative;
+    z-index: 9;
+}
+
+.present_text {
+    position: absolute;
+    width: 241px;
+    height: 98px;
+    z-index: 7;
+    top: 40%;
+    transform: translateZ(0);
+}
+
+.present_text-left {
+    left: 17%;
+}
+
+.present_text--right {
+    right: 17%;
+}
+
+.present_block {
+    position: absolute;
+    width: 241px;
+    height: 25px;
+    z-index: 6;
+    top: 43%;
+    transform: translateZ(0);
+}
+
+.present_block-left {
+    left: 16%;
+}
+
+.present_block--right {
+    right: 18%;
 }

@@ -1,14 +1,8 @@
-const aside = require('./component/aside.js');
-aside();
+const header = require('./component/header.js');
+header();
 
-const sliders = require('./component/sliders.js');
-sliders();
+const paralax = require('./component/paralax.js');
+paralax();
 
-const seoBlock = require('./component/seoBlock.js');
-seoBlock();
-
-const formPopup = require('./component/formPopup.js');
-formPopup();
-
-const categorySlide = require('./component/categorySlide.js');
-categorySlide();
+const canvas = require('./component/canvas.js');
+canvas();

@@ -9,7 +9,18 @@ html(lang="ru")
         .present
           .present_wrap
             .present_video
+              video(muted="true" preload="auto" autoplay="autoplay" loop="loop" width="100%" height="100%")
+                source(src='assets/video/header-video.mp4', type='video/mp4')
             .present_mask
+              img(src="assets/images/icons/x_day.svg", alt="mask")
+            .present_text.present_text-left
+              img(src="assets/images/icons/Event.svg", alt="Event")
+            .present_block.present_block-left
+              img(src="assets/images/icons/block.svg", alt="block-left")
+            .present_text.present_text--right
+              img(src="assets/images/icons/Place.svg", alt="Place")
+            .present_block.present_block--right
+              img(src="assets/images/icons/block.svg", alt="block-right")
             .present_btn
               a(href="#").button Выбрать дату     
         section.index-about
@@ -107,7 +118,7 @@ html(lang="ru")
                       .reviews_content-name Max Morozov
                     .reviews_item-text Создали современные корпоративные мероприятия и уникальные частные праздники для успешного бизнеса и ярких личностей! Рекомендую
                     .reviews_btn
-                      a(href="#").button Профиль Instagram
+                      a(href="#").button.button--insta Профиль Instagram
         section.call-form
           .call-form_wrap
             h4.call-form_title.main-title Обсудим?
