@@ -2,12 +2,28 @@
     background-image: url('../images/content/connection_bg.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     border: 2px solid rgba(121, 127, 160, 0.15);
     box-sizing: border-box;
     border-radius: 10px;
     padding: 80px 250px;
     text-align: center;
+
+    .slick-prev {
+        top: 10%;
+        left: -15px;
+        filter: grayscale(0);
+    }
+
+    .slick-next {
+        top: 28%;
+        right: -10px;
+        filter: grayscale(0);
+    }
+
+    .slick-disabled {
+        filter: grayscale(0.95);
+    }
 
     .slick-dots {
         padding: 0;
@@ -50,11 +66,30 @@
 
 .main-form_form-input {
     background: #F5FBFF;
-    box-shadow: 0px 7px 25px rgba(58, 58, 58, 0.15);
     border-radius: 10px;
     padding: 17px 30px;
     box-sizing: border-box;
     width: 570px;
     border: none;
-    margin: 0 5px;
+}
+
+.main-form_form-label:last-child {
+    .main-form_form-input {
+        padding-right: 185px;
+    }
+}
+
+.main-form_form-label {
+    position: relative;
+}
+
+.main-form_btn {
+    position: absolute;
+    top: -2px;
+    right: 35px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 18px 25px;
+    min-width: 190px;
 }

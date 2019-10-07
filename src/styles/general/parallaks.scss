@@ -1,0 +1,41 @@
+.parallax-scroll_first {
+  background-image: url('../images/content/planet_01.png');
+  background-repeat: no-repeat;
+  background-position: 110% 3700px;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.parallax-scroll_second {
+  background-image: url('../images/content/planet_3.png');
+  background-repeat: no-repeat;
+  background-position: -10% 3700px;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.parallax-scroll_third {
+  background-image: url('../images/content/planet_02.png');
+  background-repeat: no-repeat;
+  background-position: 110% 3700px;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+}

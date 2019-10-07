@@ -4,6 +4,9 @@ html(lang="ru")
   +head('X-Day || Главная')
   body
     .wrapper.wrapper--color-none
+      .parallax-scroll_first(data-speed="2")
+      .parallax-scroll_second(data-speed="2")
+      .parallax-scroll_third(data-speed="2")
       include ../includes/components/header.pug
       .main
         .present
@@ -29,7 +32,7 @@ html(lang="ru")
           .index-about_wrap
             include ../includes/components/about-prev.pug
             .index-about_btn
-              a(href="#").button О нас 
+              a(href="about.html").button О нас 
         section.call
           .call_wrap
             .call_card
@@ -67,7 +70,7 @@ html(lang="ru")
           .main-banner_wrap
             img(src="assets/images/content/main-baner.png", alt="banner").main-banner_img
             .main-baner_btn
-              a(href="#").button Выбрать
+              a(href="#").button.btn-form-call-js Выбрать
         .bg-wraper
           section.last-work
             .last-work_wrap

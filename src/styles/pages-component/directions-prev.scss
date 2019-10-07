@@ -19,6 +19,7 @@
     width: 828px;
     height: 743px;
     position: absolute;
+    z-index: 2;
     top: -25px;
     left: -255px;
     background-image: url('../images/content/directions_black-hole.png');
@@ -42,6 +43,8 @@
 
 .directions-prev_content {
     max-width: 370px;
+    position: relative;
+    z-index: 3;
 }
 
 .directions-prev_card {

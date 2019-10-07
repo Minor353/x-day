@@ -15,3 +15,9 @@ canvasIndex();
 
 const formPopup = require('./component/formPopup.js');
 formPopup();
+
+const parallaxScroll = require('./component/parallaxScroll.js');
+parallaxScroll();
+
+const hwwAnimate = require('./component/hwwAnimate.js');
+hwwAnimate();

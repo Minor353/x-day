@@ -64,6 +64,7 @@ module.exports = function () {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
+    infinite: false,
   });
 };
