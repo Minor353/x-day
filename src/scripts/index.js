@@ -9,3 +9,9 @@ canvas();
 
 const slickSlider = require('./component/slickSlider.js');
 slickSlider();
+
+const canvasIndex = require('./component/canvasIndex.js');
+canvasIndex();
+
+const formPopup = require('./component/formPopup.js');
+formPopup();

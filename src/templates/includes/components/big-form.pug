@@ -15,9 +15,17 @@
                         input(type="text" placeholder="Выберите диапазон цен")
                 label.call-form_label
                     .call-form_label-text и провести незабываемый праздник
-                    fieldset.call-form_label-fieldset
+                    fieldset.call-form_label-fieldset.call-form_label-fieldset--padding
                         legend Выберите событие
-                        input(type="text" placeholder="Что вы празднуете")
+                        select(name='list1').call-form_select
+                            option.call-form_select-option Корпоратив
+                            option.call-form_select-option День рождения
+                            option.call-form_select-option Юбилей
+                            option.call-form_select-option Тимбилдинг
+                            option.call-form_select-option Детский ивент
+                            option.call-form_select-option Фестиваль
+                            option.call-form_select-option Конференция
+                            option.call-form_select-option Свадьба
                 label.call-form_label
                     .call-form_label-text в этот день
                     fieldset.call-form_label-fieldset

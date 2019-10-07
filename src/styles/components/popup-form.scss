@@ -1,0 +1,126 @@
+.popup-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #14152d8c;
+  display: flex;
+  pointer-events: none;
+  transform: translateY(-100vh);
+  transition: 0.5s;
+}
+
+.popup-form_wrap {
+  position: relative;
+  max-width: 1170px;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 80px rgba(58, 58, 58, 0.15);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 60px 40px;
+  overflow: hidden;
+
+  form {
+    position: relative;
+    z-index: 99;
+  }
+
+  .call-form_label-text {
+    color: #20222D;
+  }
+
+  .call-form_label-fieldset {
+    input {
+      color: #20222D;
+    }
+  }
+
+  .big-form_container {
+    margin-bottom: 0;
+  }
+
+  .big-form_btn {
+    border: 1px solid #7785FF;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+
+.popup-form--active {
+  pointer-events: all;
+  transform: translateY(0vh);
+}
+
+.popup-form_wrap-cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/icons/cross.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(0) scale(0.9);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+
+.popup-form_wrap-cross:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+
+.popup-form_wrap-success {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.5s;
+
+  svg {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.popup-form_wrap-success--active {
+  top: 0%;
+}
+
+
+
+.rocket {
+  animation-name: shaking;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shaking {
+  0% {
+    transform: translateY(0px);
+  }
+
+  35% {
+    transform: translateY(-3px);
+  }
+
+  70% {
+    transform: translateY(3px);
+  }
+
+
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,5 +1,6 @@
 .directions-prev {
     padding: 125px 0 125px 0;
+
 }
 
 .directions-prev_wrap {
@@ -7,7 +8,36 @@
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
+    position: relative;
     align-items: center;
+
+}
+
+.directions-prev_wrap::before {
+    content: '';
+    display: block;
+    width: 828px;
+    height: 743px;
+    position: absolute;
+    top: -25px;
+    left: -255px;
+    background-image: url('../images/content/directions_black-hole.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: rotate;
+    animation-duration: 160s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
 .directions-prev_content {

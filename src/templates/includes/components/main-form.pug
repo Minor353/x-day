@@ -1,5 +1,7 @@
 .main-form
     .main-form_title.main-title У вас появился вопрос?
-    .main-form_text Начните вводить текст
+    .main-form_text Задайте его нам
     form(action="#", method="post").main-form_form
-        input(type="text" placeholder="Ваше имя").main-form_form-input
+        input(type="text" placeholder="Ваше имя" reqvired).main-form_form-input
+        input(type="text" placeholder="Ваша почта").main-form_form-input
+        input(type="text" placeholder="Ваш номер телефона").main-form_form-input

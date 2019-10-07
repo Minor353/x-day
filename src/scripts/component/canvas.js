@@ -1,6 +1,6 @@
 module.exports = function () {
   // canvas setup
-  const canvas = document.querySelector('canvas');
+  const canvas = document.querySelector('#snow');
 
   if (canvas) {
     canvas.width = window.innerWidth;

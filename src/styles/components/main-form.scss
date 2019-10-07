@@ -2,12 +2,41 @@
     background-image: url('../images/content/connection_bg.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     border: 2px solid rgba(121, 127, 160, 0.15);
     box-sizing: border-box;
     border-radius: 10px;
     padding: 80px 250px;
     text-align: center;
+
+    .slick-dots {
+        padding: 0;
+        padding-top: 20px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style-type: none;
+            padding: 0 5px;
+
+            button {
+                font-size: 0;
+                padding: 0;
+                width: 5px;
+                height: 5px;
+                background-color: #797FA0;
+                border-radius: 50px;
+                border: none
+            }
+        }
+
+        .slick-active {
+            button {
+                background-color: #00E5AD;
+            }
+        }
+    }
 }
 
 .main-form_title {
@@ -26,4 +55,6 @@
     padding: 17px 30px;
     box-sizing: border-box;
     width: 570px;
+    border: none;
+    margin: 0 5px;
 }

@@ -55,4 +55,15 @@ module.exports = function () {
     centerMode: true,
     focusOnSelect: true
   });
+
+
+
+  /**Слайдер в форме */
+
+  $('.main-form_form').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
 };
