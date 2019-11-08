@@ -9,6 +9,10 @@
     padding: 80px 250px;
     text-align: center;
 
+    @include maxtablet() {
+        padding: 80px 170px;
+    }
+
     .slick-prev {
         top: 10%;
         left: -15px;

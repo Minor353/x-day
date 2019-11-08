@@ -3,21 +3,44 @@
   padding: 0 15px;
   padding-top: 170px;
   margin: 0 auto;
+
+  @include maxtablet() {
+    padding-top: 100px;
+  }
+}
+
+.big-gallery_title {
+  @include maxtablet() {
+    text-align: center;
+  }
 }
 
 .big-gallery_gallery-wrap {
   display: flex;
+
+  @include maxtablet() {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .big-gallery_gallery {
   width: 770px;
   height: 600px;
   overflow: hidden;
+
+  @include maxtablet() {
+    margin-bottom: 40px;
+  }
 }
 
 .big-gallery_desc {
   flex: 1;
   padding-left: 30px;
+
+  @include maxtablet() {
+    padding: 0;
+  }
 }
 
 .big-gallery_gallery-screen {

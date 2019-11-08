@@ -1,6 +1,9 @@
 const header = require('./component/header.js');
 header();
 
+const nav = require('./component/nav.js');
+nav();
+
 const paralax = require('./component/paralax.js');
 paralax();
 

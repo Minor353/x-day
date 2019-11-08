@@ -12,7 +12,7 @@ $dark-grey: #373e42;
 
 $maxscreen: 1600px;
 
-$maxtablet: 1200px;
+$maxtablet: 1024px;
 
 $tablet: 770px;
 
@@ -44,7 +44,7 @@ $phone: 480px;
 }
 
 /*
-@include maxscreen() {
+@include maxtablet() {
 
   }
 */

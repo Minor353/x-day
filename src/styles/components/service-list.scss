@@ -8,6 +8,7 @@
 
 .service-list_item {
   list-style-type: none;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -28,6 +29,10 @@
   position: relative;
   display: block;
   transition: 0.3s;
+
+  @include maxtablet() {
+    background-color: #7785FF;
+  }
 }
 
 .service-list_content-icon {
@@ -42,6 +47,10 @@
     path {
       fill: #7785FF;
       transition: 0.3s;
+
+      @include maxtablet() {
+        fill: #15162D;
+      }
     }
   }
 }
@@ -70,6 +79,16 @@
   transform: translateY(-80px);
   pointer-events: none;
   transition: 0.3s;
+
+  @include maxtablet() {
+    position: static;
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+    padding: 0;
+    padding-top: 20px;
+    width: auto;
+  }
 }
 
 .service-list_item-content:hover {

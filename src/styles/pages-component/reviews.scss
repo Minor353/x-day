@@ -15,6 +15,10 @@
 
 .reviews_title {
     margin-bottom: 80px;
+
+    @include maxtablet() {
+        text-align: center;
+    }
 }
 
 .reviews_slider {

@@ -11,3 +11,9 @@
 .last-work_wrap--padding {
     padding-top: 250px;
 }
+
+.last-work_title {
+    @include maxtablet() {
+        text-align: center;
+    }
+}

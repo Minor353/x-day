@@ -16,11 +16,21 @@
     align-items: center;
     max-width: 1920px;
     margin: 0 auto;
+    position: relative;
+
+    @include maxtablet() {
+        justify-content: space-between;
+    }
 }
 
 .header_nav {
     margin-left: auto;
     padding: 27px 0;
+
+    @include maxtablet() {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .header_number {
@@ -29,6 +39,10 @@
 
     @include maxscreen() {
         margin-left: 64px;
+    }
+
+    @include maxtablet() {
+        margin: 0;
     }
 }
 

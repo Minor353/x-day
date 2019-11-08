@@ -5,6 +5,10 @@
   display: flex;
   align-items: center;
   padding-bottom: 80px;
+
+  @include maxtablet() {
+    flex-direction: column;
+  }
 }
 
 .portfolio-desc_img {
@@ -21,9 +25,32 @@
 .portfolio-desc_text {
   flex: 1;
   padding-left: 30px;
+
+  @include maxtablet() {
+    padding: 0;
+  }
 }
 
 .portfolio-desc_text--padding {
   padding-left: 0;
   padding-right: 30px;
+
+  @include maxtablet() {
+    padding: 0;
+  }
+}
+
+
+.portfolio-desc_wrap--order {
+  .portfolio-desc_img {
+    @include maxtablet() {
+      order: 1;
+    }
+  }
+
+  .portfolio-desc_text {
+    @include maxtablet() {
+      order: 2;
+    }
+  }
 }

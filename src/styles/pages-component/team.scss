@@ -8,10 +8,19 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+
+    @include maxtablet() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .team_title.main-title {
     max-width: 226px;
+
+    @include maxtablet() {
+        max-width: 450px;
+    }
 }
 
 .team_list {
@@ -21,6 +30,10 @@
     display: flex;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
+
+    @include maxtablet() {
+        padding-left: 0;
+    }
 }
 
 .team_list-item {

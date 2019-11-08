@@ -3,16 +3,29 @@
   padding: 0 15px;
   margin: 0 auto;
   padding-bottom: 150px;
+
+  @include maxtablet() {
+    padding-top: 70px;
+  }
 }
 
 .portfolio-data_info-data {
   display: flex;
   align-items: center;
+
+  @include maxtablet() {
+    flex-direction: column;
+  }
 }
 
 .portfolio-data_info {
   flex: 7;
   padding-right: 30px;
+
+  @include maxtablet() {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .portfolio-data_list {
@@ -53,6 +66,10 @@
   flex: 5;
   position: relative;
   height: 600px;
+
+  @include maxtablet() {
+    width: 100%;
+  }
 }
 
 .portfolio-data_gallery-list {
@@ -62,10 +79,18 @@
   top: 0;
   left: 0;
 
+  @include maxtablet() {
+    position: static;
+  }
+
   .portfolio-data_gallery-item {
     list-style-type: none;
     width: 845px;
     height: 600px;
+
+    @include maxtablet() {
+      width: 100%;
+    }
 
     img {
       width: 100%;

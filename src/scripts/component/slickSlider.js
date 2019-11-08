@@ -18,7 +18,7 @@ module.exports = function () {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 1030,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2

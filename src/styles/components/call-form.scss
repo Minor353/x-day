@@ -12,6 +12,16 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    @include maxtablet() {
+        justify-content: center;
+    }
+}
+
+.call-form_title {
+    @include maxtablet() {
+        text-align: center;
+    }
 }
 
 .call-form_label {
@@ -112,4 +122,10 @@
 .call-form_label-fieldset--padding {
     padding: 3px 0;
     padding-bottom: 5px;
+}
+
+.call-form_label-text--none {
+    @include maxtablet() {
+        display: none;
+    }
 }
