@@ -6,6 +6,10 @@
   border-radius: 10px;
   overflow: hidden;
   height: max-content;
+
+  @include tablet() {
+    display: none;
+  }
 }
 
 .little-card_title {

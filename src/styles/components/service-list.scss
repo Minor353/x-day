@@ -10,6 +10,10 @@
   list-style-type: none;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @include tablet() {
+    width: 100%;
+  }
 }
 
 .service-list_item:last-child {
@@ -32,6 +36,12 @@
 
   @include maxtablet() {
     background-color: #7785FF;
+    width: 470px;
+  }
+
+  @include tablet() {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 

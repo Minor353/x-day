@@ -10,3 +10,9 @@
   column-width: 570px;
   column-gap: 30px;
 }
+
+.services-call_title {
+  @include tablet() {
+    text-align: center;
+  }
+}

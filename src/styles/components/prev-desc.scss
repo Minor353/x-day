@@ -4,14 +4,29 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+
+  @include tablet() {
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
 }
 
 .prev-desc_wrap--padding {
   padding-top: 90px;
 }
 
+.prev-desc_content-title {
+  @include tablet() {
+    text-align: center;
+  }
+}
+
 .prev-desc_content {
   width: 768px;
+
+  @include tablet() {
+    width: 100%;
+  }
 }
 
 .prev-desc_img {

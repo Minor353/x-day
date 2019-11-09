@@ -1,5 +1,9 @@
 .call-form {
     padding: 125px 0 125px 0;
+
+    @include tablet() {
+        padding: 90px 0;
+    }
 }
 
 .call-form_wrap {
@@ -28,6 +32,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+
+    @include tablet() {
+        flex-wrap: wrap;
+    }
 }
 
 .call-form_label-fieldset {
@@ -100,6 +108,14 @@
 
 .call-form_label:nth-child(5) {
     margin-bottom: 0;
+
+    .call-form_label-fieldset {
+        @include tablet() {
+            width: 70%;
+            margin-left: 0;
+        }
+
+    }
 }
 
 .call-form_btn {
@@ -117,6 +133,10 @@
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 80px;
+
+    @include tablet() {
+        margin-top: 50px;
+    }
 }
 
 .call-form_label-fieldset--padding {
@@ -127,5 +147,21 @@
 .call-form_label-text--none {
     @include maxtablet() {
         display: none;
+    }
+}
+
+.call-form_label-text {
+    font-size: 16px;
+
+    @include tablet() {
+        font-size: 14px;
+    }
+}
+
+.call-form_label-text--margin {
+    @include tablet() {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
     }
 }

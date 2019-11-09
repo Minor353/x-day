@@ -103,6 +103,10 @@
     max-width: 370px;
     box-sizing: border-box;
     margin-bottom: 30px;
+
+    @include maxtablet() {
+        max-width: 49%;
+    }
 }
 
 .directions-prev_card-item:first-child {

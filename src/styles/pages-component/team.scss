@@ -34,6 +34,11 @@
     @include maxtablet() {
         padding-left: 0;
     }
+
+    @include tablet() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .team_list-item {
@@ -44,6 +49,12 @@
     height: 350px;
     display: flex;
     align-items: flex-end;
+
+    @include tablet() {
+        width: 400px;
+        height: 440px;
+        margin-bottom: 40px;
+    }
 }
 
 .team_item-img {
