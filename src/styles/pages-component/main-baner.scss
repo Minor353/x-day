@@ -8,6 +8,10 @@
     margin: 0 auto;
     position: relative;
 
+    @include mobile() {
+        min-height: 270px;
+    }
+
     img {
         width: 100%;
         height: 100%;

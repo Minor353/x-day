@@ -7,6 +7,10 @@
 
 .direction-call_wrap--padding {
   padding-top: 190px;
+
+  @include tablet() {
+    padding-top: 50px;
+  }
 }
 
 .direction-call_card {

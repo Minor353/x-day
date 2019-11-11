@@ -4,6 +4,10 @@
     background-position: 100% 75%;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include mobile() {
+        padding-top: 50px;
+    }
 }
 
 .reviews_wrap {

@@ -7,6 +7,10 @@
 
 .services-form_wrap--padding {
   padding-top: 250px;
+
+  @include tablet() {
+    padding-top: 100px;
+  }
 }
 
 .services-form {

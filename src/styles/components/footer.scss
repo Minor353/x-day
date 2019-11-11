@@ -1,7 +1,6 @@
 .footer {
     background: #121326;
     padding-top: 80px;
-    margin-top: 200px;
     position: relative;
     z-index: 9999;
 }
@@ -77,5 +76,29 @@
         color: #FFFFFF;
         padding: 23px 0;
         display: block;
+    }
+}
+
+.footer_nav {
+    @include mobile() {
+        margin-bottom: 30px;
+        width: 100%;
+        border-bottom: 1px solid grey;
+    }
+}
+
+.footer_directions-wrap {
+    @include mobile() {
+        margin-bottom: 30px;
+        width: 100%;
+        border-bottom: 1px solid grey;
+    }
+}
+
+.footer_contacts {
+    @include mobile() {
+        margin-bottom: 30px;
+        width: 100%;
+        border-bottom: 1px solid grey;
     }
 }

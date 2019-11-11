@@ -1,7 +1,9 @@
 .call {
     padding: 125px 0 125px 0;
 
-
+    @include mobile() {
+        padding: 50px 0;
+    }
 }
 
 .call_wrap {

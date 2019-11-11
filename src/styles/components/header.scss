@@ -44,6 +44,10 @@
     @include maxtablet() {
         margin: 0;
     }
+
+    @include tablet() {
+        display: none;
+    }
 }
 
 .header_number-text {
@@ -73,6 +77,10 @@
 
     @include maxscreen() {
         margin-right: 20px;
+    }
+
+    @include mobile() {
+        margin-right: 0;
     }
 }
 

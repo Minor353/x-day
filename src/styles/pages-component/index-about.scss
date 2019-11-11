@@ -4,6 +4,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include tablet() {
+        padding-top: 50px;
+    }
+
+    @include mobile() {
+        padding: 50px 0;
+    }
 }
 
 .index-about_wrap {

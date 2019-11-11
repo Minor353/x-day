@@ -51,10 +51,18 @@
 
 .present_text-left {
     left: 17%;
+
+    @include tablet() {
+        left: 1%;
+    }
 }
 
 .present_text--right {
     right: 17%;
+
+    @include tablet() {
+        right: 1%;
+    }
 }
 
 .present_block {
@@ -68,8 +76,16 @@
 
 .present_block-left {
     left: 16%;
+
+    @include tablet() {
+        left: 1%;
+    }
 }
 
 .present_block--right {
     right: 18%;
+
+    @include tablet() {
+        right: 1%;
+    }
 }

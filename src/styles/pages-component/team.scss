@@ -1,5 +1,9 @@
 .team {
     padding: 125px 0 125px 0;
+
+    @include mobile() {
+        padding: 50px 0;
+    }
 }
 
 .team_wrap {
@@ -54,6 +58,10 @@
         width: 400px;
         height: 440px;
         margin-bottom: 40px;
+    }
+
+    @include mobile() {
+        width: 100%;
     }
 }
 

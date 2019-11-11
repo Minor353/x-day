@@ -4,6 +4,10 @@
     @include tablet() {
         padding: 90px 0;
     }
+
+    @include mobile() {
+        padding: 50px 0;
+    }
 }
 
 .call-form_wrap {
@@ -90,6 +94,10 @@
 .call-form_label:first-child {
     .call-form_label-fieldset {
         width: 300px;
+
+        @include mobile() {
+            width: 100%;
+        }
     }
 }
 
@@ -97,12 +105,20 @@
 .call-form_label:nth-child(3) {
     .call-form_label-fieldset {
         width: 328px;
+
+        @include mobile() {
+            width: 100%;
+        }
     }
 }
 
 .call-form_label:nth-child(4) {
     .call-form_label-fieldset {
         width: 246px;
+
+        @include mobile() {
+            width: 100%;
+        }
     }
 }
 
@@ -113,6 +129,11 @@
         @include tablet() {
             width: 70%;
             margin-left: 0;
+        }
+
+        @include mobile() {
+            width: 100%;
+            margin-left: 20px;
         }
 
     }

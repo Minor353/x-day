@@ -1,5 +1,10 @@
 .about-prev_container {
     display: flex;
+
+    @include tablet() {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .about-prev_container-content {
@@ -9,6 +14,7 @@
 .about-prev_container-img {
     width: 370px;
     height: 397px;
+
     img {
         width: 100%;
         height: 100%;
@@ -22,6 +28,10 @@
 
 .about-prev_counter {
     padding: 70px 0;
+
+    @include mobile() {
+        padding: 35px 0;
+    }
 }
 
 .about-prev_counter-list {
@@ -29,10 +39,18 @@
     margin: 0;
     display: flex;
     justify-content: space-around;
+
+    @include mobile() {
+        flex-direction: column;
+    }
 }
 
 .about-prev_counter-item {
     list-style-type: none;
+
+    @include mobile() {
+        margin-bottom: 30px;
+    }
 }
 
 .about-prev_counter-num {

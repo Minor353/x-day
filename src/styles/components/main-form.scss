@@ -17,16 +17,28 @@
         padding: 80px 40px;
     }
 
+    @include mobile() {
+        padding: 30px 15px;
+    }
+
     .slick-prev {
         top: 10%;
         left: -15px;
         filter: grayscale(0);
+
+        @include mobile() {
+            left: -5px;
+        }
     }
 
     .slick-next {
         top: 28%;
         right: -10px;
         filter: grayscale(0);
+
+        @include mobile() {
+            right: -5px;
+        }
     }
 
     .slick-disabled {
@@ -79,11 +91,23 @@
     box-sizing: border-box;
     width: 570px;
     border: none;
+
+    @include maxtablet() {
+        width: 350px;
+    }
+
+    @include mobile() {
+        width: 75%;
+    }
 }
 
 .main-form_form-label:last-child {
     .main-form_form-input {
         padding-right: 185px;
+
+        @include mobile() {
+            padding-right: 90px;
+        }
     }
 }
 
@@ -101,4 +125,9 @@
     padding: 18px 25px;
     min-width: 190px;
     border-radius: 10px;
+
+    @include mobile() {
+        padding: 18px 5px;
+        min-width: 100px;
+    }
 }

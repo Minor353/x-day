@@ -23,6 +23,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 160px;
+
+  @include mobile() {
+    flex-direction: column;
+  }
 }
 
 .hww_content-item:last-child {
@@ -39,6 +43,11 @@
   transform: translateX(-200px);
   opacity: 0;
   transition: 0.5s;
+
+  @include mobile() {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .hww_item-icon {
@@ -65,12 +74,21 @@
   transform: translateX(200px);
   opacity: 0;
   transition: 0.5s;
+
+  @include mobile() {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .hww_content-item--active {
   .hww_item-title {
     transform: translateX(0px);
     opacity: 1;
+
+    @include mobile() {
+      transform: translate(0px, -10px);
+    }
   }
 
   .hww_item-icon {
@@ -81,6 +99,10 @@
   .hww_item-text {
     transform: translateY(0px);
     opacity: 1;
+
+    @include mobile() {
+      transform: translate(0px, 10px);
+    }
   }
 }
 

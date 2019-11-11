@@ -1,5 +1,9 @@
 .home-form {
     padding: 125px 0 125px 0;
+
+    @include mobile() {
+        padding: 50px 0;
+    }
 }
 
 .home-form_wrap {

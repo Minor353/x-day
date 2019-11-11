@@ -1,6 +1,9 @@
 .directions-prev {
     padding: 125px 0 125px 0;
 
+    @include mobile() {
+        padding: 50px 0;
+    }
 }
 
 .directions-prev_wrap {
@@ -106,6 +109,10 @@
 
     @include maxtablet() {
         max-width: 49%;
+    }
+
+    @include mintablet() {
+        max-width: 100%;
     }
 }
 

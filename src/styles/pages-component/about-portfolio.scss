@@ -3,6 +3,10 @@
   padding: 0 15px;
   padding-top: 250px;
   margin: 0 auto;
+
+  @include mobile() {
+    padding-top: 50px;
+  }
 }
 
 .about-portfolio_tabs {

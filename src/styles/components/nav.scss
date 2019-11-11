@@ -11,6 +11,12 @@
         transition: 0.5s;
     }
 
+    .nav_list-item-phone {
+        @include maxtablet() {
+            display: block;
+        }
+    }
+
     .nav_list {
         display: flex;
         padding: 0;
@@ -40,6 +46,11 @@
             padding: 20px 40px;
             display: block;
         }
+
+        @include mobile() {
+            font-size: 30px;
+            padding: 10px 20px;
+        }
     }
 
     .nav_list-item:first-child {
@@ -48,6 +59,10 @@
 
             @include maxtablet() {
                 padding: 20px 40px;
+            }
+
+            @include mobile() {
+                padding: 10px 20px;
             }
         }
     }
@@ -108,4 +123,11 @@
             padding-bottom: 0;
         }
     }
+}
+
+.nav_list-item-phone {
+    padding: 20px 40px;
+    display: none;
+
+
 }

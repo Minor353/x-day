@@ -8,6 +8,7 @@
   background-color: #14152d8c;
   display: flex;
   pointer-events: none;
+  opacity: 0;
   transform: translateY(-100vh);
   transition: 0.5s;
 }
@@ -52,6 +53,7 @@
 
 .popup-form--active {
   pointer-events: all;
+  opacity: 1;
   transform: translateY(0vh);
 }
 

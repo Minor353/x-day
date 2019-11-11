@@ -16,6 +16,8 @@ $maxtablet: 1024px;
 
 $tablet: 770px;
 
+$mintablet: 610px;
+
 $phone: 480px;
 
 
@@ -37,6 +39,12 @@ $phone: 480px;
     }
 }
 
+@mixin mintablet {
+    @media screen and (max-width:$mintablet) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media screen and (max-width:$phone) {
         @content;
@@ -44,7 +52,7 @@ $phone: 480px;
 }
 
 /*
-@include tablet() {
+@include mobile() {
 
   }
 */

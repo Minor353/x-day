@@ -18,6 +18,10 @@
     position: relative;
     z-index: 6;
     transition: 0.3s;
+
+    @include mobile() {
+        padding: 8px 20px;
+    }
 }
 
 

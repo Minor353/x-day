@@ -3,6 +3,10 @@
   border-radius: 10px;
   padding: 80px 40px;
 
+  @include mobile() {
+    padding: 40px 20px;
+  }
+
   .call-form_label-text,
   .big-form_text,
   .big-form_label-text {
@@ -16,6 +20,11 @@
   line-height: 59px;
   color: #14152D;
   margin-bottom: 20px;
+
+  @include mobile() {
+    font-size: 34px;
+    line-height: 44px;
+  }
 }
 
 .big-form_container {

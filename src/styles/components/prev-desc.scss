@@ -9,10 +9,18 @@
     flex-direction: column-reverse;
     padding-bottom: 100px;
   }
+
+  @include mobile() {
+    padding-bottom: 50px;
+  }
 }
 
 .prev-desc_wrap--padding {
   padding-top: 90px;
+
+  @include mobile() {
+    padding-top: 50px;
+  }
 }
 
 .prev-desc_content-title {
@@ -31,11 +39,24 @@
 
 .prev-desc_img {
   width: 465px;
+
+  @include mobile() {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .prev-desc_img--size {
   width: 370px;
   height: 370px;
+
+  @include mobile() {
+    width: 200px;
+    height: 200px;
+  }
 
   img {
     width: 100%;
