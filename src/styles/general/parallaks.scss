@@ -10,6 +10,10 @@
   right: 0;
   z-index: 2;
   pointer-events: none;
+
+  @include tablet() {
+    display: none;
+  }
 }
 
 .parallax-scroll_second {
@@ -24,6 +28,10 @@
   right: 0;
   z-index: 2;
   pointer-events: none;
+
+  @include tablet() {
+    display: none;
+  }
 }
 
 .parallax-scroll_third {
@@ -38,4 +46,8 @@
   right: 0;
   z-index: 2;
   pointer-events: none;
+
+  @include tablet() {
+    display: none;
+  }
 }

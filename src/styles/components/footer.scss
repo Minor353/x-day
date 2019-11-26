@@ -3,6 +3,11 @@
     padding-top: 80px;
     position: relative;
     z-index: 9999;
+    margin-top: 200px;
+
+    @include mobile() {
+        margin-top: 80px;
+    }
 }
 
 .footer_wrap {
@@ -51,6 +56,11 @@
     display: block;
     padding-bottom: 20px;
     margin-right: 30px;
+    transition: 0.3s;
+
+    &:hover {
+        color: #E5007E;
+    }
 }
 
 .footer_socials-list {
@@ -63,6 +73,24 @@
 .footer_socials-list-item {
     list-style-type: none;
     padding-right: 40px;
+    width: 20px;
+    height: 20px;
+
+    svg {
+        path {
+            fill: #fff;
+            transition: 0.3s;
+        }
+    }
+
+    &:hover {
+        svg {
+            path {
+                fill: #E5007E;
+
+            }
+        }
+    }
 }
 
 .footer_allright {

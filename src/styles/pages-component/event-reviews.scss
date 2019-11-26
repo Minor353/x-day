@@ -90,6 +90,10 @@
     margin-bottom: 40px;
     margin-top: -220px;
   }
+
+  @include mobile() {
+    height: 260px;
+  }
 }
 
 .event-reviews_content-img-wrap {

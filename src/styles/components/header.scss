@@ -68,7 +68,7 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 160%;
-    color: #00E5AD;
+    color: #E5007E;
 }
 
 .header_msg {
@@ -92,6 +92,11 @@
     .logo_link {
         width: 100px;
         height: 80px;
+
+        @include mobile() {
+            width: 70px;
+            height: 60px;
+        }
     }
 }
 

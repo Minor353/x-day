@@ -3,6 +3,14 @@
     max-height: 920px;
     display: flex;
     position: relative;
+
+    @include tablet() {
+        height: 65vh;
+    }
+
+    @include mobile() {
+        height: 600px;
+    }
 }
 
 .present_video {
@@ -14,6 +22,18 @@
     left: 50%;
     transform: translate(-50%, -57%);
     overflow: hidden;
+
+    @include tablet() {
+        height: 380px;
+        width: 100%;
+        top: 43%;
+    }
+
+    @include mobile() {
+        height: auto;
+        width: 100%;
+        top: 43%;
+    }
 }
 
 .present_mask {
@@ -26,10 +46,46 @@
     transform: translate(-50%, -57%);
     overflow: hidden;
 
-    svg {
-        display: block;
+    @include tablet() {
+        height: 390px;
+        top: 43%;
+    }
+
+    @include mobile() {
+        height: auto;
+        width: 100%;
+        top: 43%;
+    }
+
+    img {
         width: 100%;
         height: 100%;
+    }
+}
+
+.present_mask-desc {
+    @include tablet() {
+        display: none;
+    }
+}
+
+.present_mask-tablet {
+    display: none;
+
+    @include tablet() {
+        display: block;
+    }
+
+    @include mobile() {
+        display: none;
+    }
+}
+
+.present_mask-mobile {
+    display: none;
+
+    @include mobile() {
+        display: block;
     }
 }
 
@@ -38,6 +94,10 @@
     margin-bottom: 28vh;
     position: relative;
     z-index: 9;
+
+    @include tablet() {
+        margin-bottom: 50px;
+    }
 }
 
 .present_text {
@@ -47,6 +107,10 @@
     z-index: 7;
     top: 40%;
     transform: translateZ(0);
+
+    @include tablet() {
+        display: none;
+    }
 }
 
 .present_text-left {
@@ -72,6 +136,10 @@
     z-index: 6;
     top: 43%;
     transform: translateZ(0);
+
+    @include tablet() {
+        display: none;
+    }
 }
 
 .present_block-left {

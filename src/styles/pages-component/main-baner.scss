@@ -1,5 +1,9 @@
 .main-baner {
     padding: 0 0 125px 0;
+
+    @include mobile() {
+        padding: 0;
+    }
 }
 
 .main-banner_wrap {

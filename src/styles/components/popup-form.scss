@@ -24,6 +24,10 @@
   padding: 60px 40px;
   overflow: hidden;
 
+  @include mobile() {
+    padding: 60px 15px;
+  }
+
   form {
     position: relative;
     z-index: 99;
@@ -41,6 +45,12 @@
 
   .big-form_container {
     margin-bottom: 0;
+
+    @include mobile() {
+      height: 330px;
+      width: 100%;
+      overflow-y: scroll;
+    }
   }
 
   .big-form_btn {
@@ -48,6 +58,11 @@
     display: block;
     margin: 0 auto;
     margin-top: 60px;
+
+    @include mobile() {
+      margin-bottom: 25px;
+    }
+
   }
 }
 
@@ -97,6 +112,14 @@
 
 .popup-form_wrap-success--active {
   top: 0%;
+
+  @include tablet() {
+    top: 33%;
+  }
+
+  @include mobile() {
+    top: 22%;
+  }
 }
 
 

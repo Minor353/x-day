@@ -10,16 +10,31 @@
     min-width: 270px;
     width: max-content;
     text-align: center;
-    background-color: #7785FF;
+    background: linear-gradient(101.75deg, #E5007E 1.95%, #951681 100%);
     box-shadow: 0px 7px 25px rgba(8, 8, 18, 0.3);
     border-radius: 30px;
     box-sizing: border-box;
     cursor: pointer;
+    transition: 0.3s;
+
+    @include mobile() {
+        padding: 18px 20px;
+        min-width: 240px;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 12px 25px rgba(8, 8, 18, 0.4);
+    }
 }
 
 .button--color {
-    background-color: #00E5AD;
-    box-shadow: 0px 5px 15px #00B387;
+    background: #F189A3;
+    box-shadow: 0px 5px 15px rgba(236, 91, 127, 0.5);
+
+    &:hover {
+        box-shadow: 0px 12px 15px rgba(236, 91, 127, 0.5);
+    }
 }
 
 .button--insta {

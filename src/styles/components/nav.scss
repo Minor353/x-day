@@ -36,6 +36,11 @@
         line-height: 160%;
         color: #FFFFFF;
         padding: 0 40px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #E5007E;
+        }
 
         @include maxscreen() {
             padding: 0 20px;
@@ -110,6 +115,11 @@
         color: #FFFFFF;
         padding: 10px 0;
         display: block;
+        transition: 0.3s;
+
+        &:hover {
+            color: #E5007E;
+        }
     }
 
     .nav_list-item:first-child {

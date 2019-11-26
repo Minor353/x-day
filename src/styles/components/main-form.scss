@@ -69,7 +69,7 @@
 
         .slick-active {
             button {
-                background-color: #00E5AD;
+                background-color: #E5007E;
             }
         }
     }
@@ -129,5 +129,10 @@
     @include mobile() {
         padding: 18px 5px;
         min-width: 100px;
+    }
+
+    &:hover {
+        transform: translateY(0);
+        box-shadow: none;
     }
 }

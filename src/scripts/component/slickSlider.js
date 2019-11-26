@@ -53,7 +53,20 @@ module.exports = function () {
     asNavFor: '.big-gallery_gallery-screen',
     dots: false,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [{
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      }
+
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
 
 
