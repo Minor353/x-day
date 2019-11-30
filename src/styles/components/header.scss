@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     max-width: 1920px;
+    padding: 0 15px;
     margin: 0 auto;
     position: relative;
 
@@ -90,12 +91,12 @@
     background-color: #14152df0;
 
     .logo_link {
-        width: 100px;
-        height: 80px;
+        width: 148px;
+        height: 59px;
 
         @include mobile() {
-            width: 70px;
-            height: 60px;
+            width: 58px;
+            height: 58px;
         }
     }
 }
