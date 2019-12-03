@@ -1,13 +1,28 @@
+.portfolio {
+    position: relative;
+}
+
 .portfolio_list {
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    transition: 0.3s;
 
     @include maxtablet() {
         justify-content: space-around;
     }
+}
+
+.portfolio_list--active {
+    opacity: 1;
+    position: static;
+    pointer-events: all;
 }
 
 .portfolio_list-item {

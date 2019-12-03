@@ -24,3 +24,6 @@ parallaxScroll();
 
 const hwwAnimate = require('./component/hwwAnimate.js');
 hwwAnimate();
+
+const portfolioTabs = require('./component/portfolioTabs.js');
+portfolioTabs();
