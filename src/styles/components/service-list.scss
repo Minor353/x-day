@@ -50,18 +50,14 @@
   width: 60px;
   height: 60px;
 
-  svg {
+  img {
     display: block;
     width: 100%;
     height: 100%;
+    transition: 0.3s;
 
-    path {
-      fill: #951681;
-      transition: 0.3s;
-
-      @include maxtablet() {
-        fill: #15162D;
-      }
+    @include tablet() {
+      filter: grayscale(1);
     }
   }
 }
@@ -114,11 +110,8 @@
 
   .service-list_content-icon {
 
-    svg {
-
-      path {
-        fill: #15162D;
-      }
+    img {
+      filter: grayscale(1);
     }
   }
 }

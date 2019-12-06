@@ -38,7 +38,7 @@
 
 .present_mask {
     position: absolute;
-    z-index: -2;
+    z-index: 1;
     width: 650px;
     height: 650px;
     top: 50%;
@@ -95,6 +95,7 @@
     margin-bottom: 28vh;
     position: relative;
     z-index: 9;
+    text-align: center;
 
     @include tablet() {
         margin-bottom: 50px;

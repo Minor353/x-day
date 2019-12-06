@@ -27,3 +27,16 @@ hwwAnimate();
 
 const portfolioTabs = require('./component/portfolioTabs.js');
 portfolioTabs();
+
+function loadData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, 1300);
+  })
+}
+
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('preloader--hidden');
+    preloaderEl.classList.remove('preloader--visible');
+  });

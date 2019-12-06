@@ -3,6 +3,11 @@ html(lang="ru")
   include ../includes/common/head.pug
   +head('X-Day || Главная')
   body
+    .preloader#preloader
+      .cssload-loader
+        .cssload-inner.cssload-one
+        .cssload-inner.cssload-two
+        .cssload-inner.cssload-three
     .wrapper.wrapper--color-none
       .parallax-scroll_first(data-speed="2")
       .parallax-scroll_second(data-speed="2")

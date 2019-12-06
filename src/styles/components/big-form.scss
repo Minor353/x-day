@@ -47,6 +47,10 @@
   width: 50%;
   align-items: center;
   margin-bottom: 30px;
+
+  @include mobile() {
+    width: 100%;
+  }
 }
 
 .big-form_textarea {
@@ -91,13 +95,13 @@
   content: '';
   position: absolute;
   opacity: 0;
-  left: 4.5px;
-  top: 18%;
-  width: 12px;
-  height: 10px;
+  left: 3px;
+  top: 50%;
+  width: 14px;
+  height: 8px;
   border-left: 2px solid #F189A3;
   border-bottom: 2px solid #F189A3;
-  transform: rotate(-45deg);
+  transform: translateY(-50%) rotate(-54deg);
   transition: 0.3s;
 }
 

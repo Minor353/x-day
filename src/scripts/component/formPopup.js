@@ -12,48 +12,10 @@ module.exports = function () {
         popupForm.classList.add('popup-form--active');
       });
     };
+  }
 
-    popupCross.addEventListener('click', function () {
-      popupForm.classList.remove('popup-form--active');
-    });
-  };
+  popupCross.addEventListener('click', function () {
+    popupForm.classList.remove('popup-form--active');
+  });
 
-
-  /**Сабмит формы */
-  $('#popupForm').on('submit', submitPopupForm);
-
-  function submitPopupForm(e) {
-    e.preventDefault();
-
-    var form = $(e.target),
-      data = form.serialize(),
-      url = form.attr('action');
-
-    var request = $.ajax({
-      type: 'POST',
-      url: url,
-      data: data
-    });
-
-    function closePopupSuccess() {
-      popupSuccess.classList.remove('popup-form_wrap-success--active');
-    }
-
-
-    function closePopup() {
-      popupForm.classList.remove('popup-form--active');
-      document.getElementById('popupForm').reset();
-      setTimeout(closePopupSuccess, 500);
-    }
-
-    request.done(function (msg) {
-      popupSuccess.classList.add('popup-form_wrap-success--active');
-      setTimeout(closePopup, 2800);
-    });
-
-    request.fail(function (jqXHR, textStatus) {
-      popupSuccess.classList.add('popup-form_wrap-success--active');
-      setTimeout(closePopup, 2800);
-    })
-  };
-};
+}

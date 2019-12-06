@@ -1,12 +1,12 @@
 .direction-call_wrap {
   max-width: 1170px;
   padding: 0 15px;
-  padding-top: 230px;
+  padding-top: 150px;
   margin: 0 auto;
 }
 
 .direction-call_wrap--padding {
-  padding-top: 190px;
+  padding-top: 150px;
 
   @include tablet() {
     padding-top: 50px;
